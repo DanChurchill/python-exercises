@@ -36,7 +36,7 @@ if class_full == False AND conflict = False:
 # amount of products.
 offer_valid = True if:
     (items_purchased > 3 AND offer_expired == False) OR
-    premium_member == True
+    premium_member AND NOT offer_expired== True
 
 
 username = 'codeup'
@@ -44,43 +44,19 @@ password = 'notastrongpassword'
 
 # Create a variable that holds a boolean value for each of the following conditions:
 # the password must be at least 5 characters
-if len(password) >= 5:
-    valid = True
-else:
-    valid = False
+more_than_4 = len(password) >= 4:
 
-print(valid)
 
 # the username must be no more than 20 characters
-if len(username) <= 20:
-    valid = True
-else:
-    valid = False
-print(valid)
+big_enough = len(username) <= 20
+
 
 # the password must not be the same as the username
-if username != password:
-    valid = True
-else:
-    valid = False
-print(valid)
+not_same = username != password
+ 
 
 # bonus neither the username or password can start or end with whitespace
-if username[0] == ' ':
-    valid = False
-elif password[0] == ' ':
-    valid = False
-else:
-    valid = True
-print(valid)
-
-
-
-
-
-
-
-
+no_white = username[0] != ' ' and username[-1] != 1 and password[0] != ' ' and password[-1] != 1
 
 
 
