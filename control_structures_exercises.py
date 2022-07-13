@@ -256,3 +256,39 @@ while True:
     else:
         break
 
+
+# BONUS
+# Create a list of dictionaries where each dictionary represents a book that you have read. 
+# Each dictionary in the list should have the keys title, author, and genre. 
+# Loop through the list and print out information about each book.
+
+mybooks = [
+    {
+        "title": "Green Eggs and Ham",
+        "author": "web development",
+        "genre": "children's"
+    },
+    
+    {
+        "title": "IT",
+        "author": "Stephen King",
+        "genre": "Horror"        
+    },
+    
+    {
+        "title": "coloring trees",
+        "author": "some guy",
+        "genre": "children's"
+    }]
+
+for book in mybooks:
+    print(book)
+
+# Prompt the user to enter a genre, 
+# then loop through your books list and print out the titles of all the books in that genre.
+
+what_genre = input("What genre? Choose children's, or Horror")
+
+for book in mybooks:
+    if book["genre"] == what_genre:
+        print(book["author"])
