@@ -208,18 +208,14 @@ while i < 10:
 
 
 
-# In[87]:
-
-
-
-i = 0
+# In[7]:
 
 
 while i < 1:
     number = input("give me an odd number between 1 and 50:  ")
-    if number.isdigit() == True:
+    if (number.isdigit() == True) and (int(number) <= 50) and (int(number) >=1) and (int(number) %2 == 1):
         break
-
+    
 number = int(number)
 
 print("Number to skip is:  ", number)
@@ -234,10 +230,7 @@ while j < 50:
     j += 2
 
 
-# for n in range(49):
-# if n % 2 == 0:
-#     continue
-# print(f'Here is an odd number: {}')
+
         
     
     
@@ -253,19 +246,17 @@ while j < 50:
 #  also note that the input function returns a string, so you'll need to convert this to a numeric type.)
 
 
-# In[94]:
+# In[6]:
 
 
 i = 0
 while i < 1:
     number = input("give me a positive number between 1 and 50:  ")
-    if number.isdigit() == True:
+    if (number.isdigit() == True) and (int(number) <= 50) and (int(number) >=1):
         break
-        
+    
 number = int(number)
-if number < 0 or number > 50:
-    print('bad number!')
-    quit()
+
 j=0
 while j <= number:
     print(j)
@@ -277,23 +268,18 @@ while j <= number:
         
 
 
-# In[95]:
+# In[5]:
 
 
 # Write a program that prompts the user for a positive integer. 
 # Next write a loop that prints out the numbers from the number the user entered down to 1.
 
-i = 0
-while i < 1:
+while True:
     number = input("give me a positive number between 1 and 50:  ")
-    if number.isdigit() == True:
+    if (number.isdigit() == True) and (int(number) <= 50) and (int(number) >=1):
         break
         
-number = int(number)
-if number < 0 or number > 50:
-    print('bad number!')
-    quit()
-j=number
+j=int(number)
 while j >= 0:
     print(j)
     j-=1
@@ -327,7 +313,7 @@ while i <= 99:
     
 
 
-# In[122]:
+# In[ ]:
 
 
 # Display a table of powers.
@@ -337,19 +323,24 @@ while i <= 99:
 # Ask if the user wants to continue.
 # Assume that the user will enter valid data.
 # Only continue if the user agrees to.
+while True:
+    number = int(input("What number would you like to go up to?  "))
 
-number = int(input("What number would you like to go up to?  "))
+    print("Here is your table!")
+    print("")
+    print("number | squared | cubed")
+    print("------ | ------- | -----")
 
-print("Here is your table!")
-print("")
-print("number | squared | cubed")
-print("------ | ------- | -----")
-
-i = 1
-pipe = "|  "
-while i <= number:
-    print(f"{i : <7}{pipe : <1}{i**2 : <7}{pipe : <1}{i**3 : <9}")
-    i +=1
+    i = 1
+    pipe = "|  "
+    while i <= number:
+        print(f"{i : <7}{pipe : <1}{i**2 : <7}{pipe : <1}{i**3 : <9}")
+        i +=1
+    check = input("Would you like to continue? (Y/N)")
+    if check == 'Y':
+        continue
+    else:
+        break
 
 
 # In[126]:
@@ -370,7 +361,7 @@ while i <= number:
 # D : 66 - 60
 # F : 59 - 0
 
-while 1>0:
+while True:
     grade = int(input("enter the numerical grade  :"))
     if grade >= 88:
         print("The grade is A")
@@ -387,6 +378,12 @@ while 1>0:
         continue
     else:
         break
+
+
+# In[2]:
+
+
+
 
 
 # In[ ]:
