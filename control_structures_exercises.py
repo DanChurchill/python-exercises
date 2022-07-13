@@ -1,13 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
 
 # prompt the user for a day of the week, print out whether the day is Monday or not
-
-
-# In[5]:
 
 
 what_day = input("what day is it?  ")
@@ -18,14 +13,7 @@ else:
     print ("Not Monday")
 
 
-# In[6]:
-
-
 # prompt the user for a day of the week, print out whether the day is a weekday or a weekend
-
-
-# In[10]:
-
 
 weekdays = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday']
 weekend = ['saturday', 'sunday']
@@ -39,20 +27,12 @@ elif is_it_weekend.lower() in weekend:
 else: 
     print("that's not a day!")
 
-
-# In[11]:
-
-
 # # create variables and make up values for
 
 # the number of hours worked in one week
 # the hourly rate
 # how much the week's paycheck will be
 # write the python code that calculates the weekly paycheck. You get paid time and a half if you work more than 40 hours
-
-
-# In[17]:
-
 
 week_hours = 48
 hourly_rate = 12.50
@@ -65,19 +45,11 @@ else:
     
 print('$', "{:.2f}".format(paycheck))
 
-
-# In[18]:
-
-
 # While
 
 # Create an integer variable i with a value of 5.
 # Create a while loop that runs so long as i is less than or equal to 15
 # Each loop iteration, output the current value of i, then increment i by one.
-
-
-# In[19]:
-
 
 i = 5
 
@@ -85,16 +57,7 @@ while i <= 15:
     print(i)
     i += 1
     
-
-
-# In[20]:
-
-
 # Create a while loop that will count by 2's starting with 0 and ending at 100. Follow each number with a new line.
-
-
-# In[23]:
-
 
 i = 0
 while i <= 100:
@@ -102,14 +65,7 @@ while i <= 100:
     i += 2
 
 
-# In[24]:
-
-
 # Alter your loop to count backwards by 5's from 100 to -10.
-
-
-# In[25]:
-
 
 i = 100
 while i >= -10:
@@ -117,30 +73,15 @@ while i >= -10:
     i -= 5
 
 
-# In[26]:
-
-
 # Create a while loop that starts at 2, and displays the number squared on each line while
 # the number is less than 1,000,000. Output should equal:
-
-
-# In[27]:
-
 
 i = 2
 while i < 1000000:
     print(i)
     i = i**2
 
-
-# In[28]:
-
-
 # Write a loop that uses print to create the output shown below
-
-
-# In[29]:
-
 
 i = 100
 while i > 0:
@@ -148,22 +89,7 @@ while i > 0:
     i -= 5
 
 
-# In[30]:
-
-
 # Write some code that prompts the user for a number, then shows a multiplication table up through 10 for that number.
-
-
-# 
-
-# In[ ]:
-
-
-
-
-
-# In[36]:
-
 
 number = int(input("give me a number:  "))
 
@@ -173,13 +99,7 @@ while i <= 10:
     i += 1
 
 
-# In[37]:
-
-
 # Create a for loop that uses print to create the output shown below.
-
-
-# In[47]:
 
 
 i = 1
@@ -193,22 +113,10 @@ while i < 10:
     i += 1
 
 
-# In[48]:
-
-
 # Prompt the user for an odd number between 1 and 50. 
 # Use a loop and a break statement to continue prompting the user if they enter invalid input. 
 # (Hint: use the isdigit method on strings to determine this). Use a loop and the continue statement 
 # to output all the odd numbers between 1 and 50, except for the number the user entered.
-
-
-# In[50]:
-
-
-
-
-
-# In[7]:
 
 
 while i < 1:
@@ -230,23 +138,10 @@ while j < 50:
     j += 2
 
 
-
-        
-    
-    
-        
-
-
-# In[88]:
-
-
 # # The input function can be used to prompt for input and use that input in your python code. 
 # Prompt the user to enter a positive number and write a loop that counts from 0 to that number. 
 # (Hints: first make sure that the value the user entered is a valid number, 
 #  also note that the input function returns a string, so you'll need to convert this to a numeric type.)
-
-
-# In[6]:
 
 
 i = 0
@@ -263,14 +158,6 @@ while j <= number:
     j+=1
 
 
-    
-    
-        
-
-
-# In[5]:
-
-
 # Write a program that prompts the user for a positive integer. 
 # Next write a loop that prints out the numbers from the number the user entered down to 1.
 
@@ -283,9 +170,6 @@ j=int(number)
 while j >= 0:
     print(j)
     j-=1
-
-
-# In[99]:
 
 
 # One of the most common interview questions for entry-level programmers is the FizzBuzz test. 
@@ -312,10 +196,6 @@ while i <= 99:
     print(i)
     
 
-
-# In[ ]:
-
-
 # Display a table of powers.
 
 # Prompt the user to enter an integer.
@@ -341,9 +221,6 @@ while True:
         continue
     else:
         break
-
-
-# In[126]:
 
 
 # Convert given number grades into letter grades.
@@ -378,16 +255,4 @@ while True:
         continue
     else:
         break
-
-
-# In[2]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
