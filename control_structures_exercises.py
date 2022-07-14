@@ -5,6 +5,8 @@
 # prompt the user for a day of the week, print out whether the day is Monday or not
 
 
+
+
 what_day = input("what day is it?  ")
 
 if what_day.upper() == "MONDAY":
