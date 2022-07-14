@@ -293,4 +293,4 @@ what_genre = input("What genre? Choose children's, or Horror")
 
 for book in mybooks:
     if book["genre"] == what_genre:
-        print(book["author"])
+        print(book["title"])
