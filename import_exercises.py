@@ -4,3 +4,4 @@ from function_exercises import calculate_tip
 
 # Call this function with values you choose and print the result.
 calculate_tip(.5, 100)
+
